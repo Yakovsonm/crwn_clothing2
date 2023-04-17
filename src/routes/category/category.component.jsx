@@ -16,9 +16,7 @@ const Category = () => {
   const [products, setProducts] = useState(categoriesMap[category]);
 
   useEffect(() => {
-    console.log(`isLoading:${isLoading}`);
     setProducts(categoriesMap[category]);
-    console.log(`isLoading:${isLoading}`);
   }, [category, categoriesMap]);
 
   return (
